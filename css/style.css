@@ -1,0 +1,145 @@
+body {
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(0, 0, 0);
+    line-height: 1.2;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+/* 
+font-family: 'Permanent Marker', cursive;
+font-family: 'Special Elite', cursive; */
+/* --- Container --- */
+
+.container {
+    max-width: 1200px;
+    width: auto;
+    margin: 0 auto;
+}
+
+/* --- Button --- */
+.btn {
+    display: inline-block;
+    vertical-align: top;
+    text-decoration: none;
+    color: #fff;
+    background-color: black;
+    padding: 10px 20px;
+    border-radius: 5%;
+    font-family: 'Raleway' ,sans-serif;
+    font-size: 1.5rem;
+}
+/* --- Header --- */
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+}
+.header__inner {
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__title{
+    font-family: 'Sue Ellen Francisco', cursive;
+    font-weight: bold;
+    font-size: 2.5rem;
+    cursor: pointer;
+    border: 2px solid black;
+    padding: 10px;
+    transition: all .2s linear;
+}
+
+.header__title:hover {
+       color: rgb(252, 18, 49);
+       background-color: #fff;
+}
+
+/* --- Nav --- */
+
+.nav__link {
+    color: rgb(0, 0, 0);
+    font-family: 'Special Elite', cursive;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 20px;
+
+    transition: color .2s linear;
+}
+
+.nav__link:first-child {
+    margin-left: 0;
+}
+
+.nav__link.active {
+    color: rgb(252, 18, 49);
+}
+
+.nav__link:hover {
+    color: rgb(252, 18, 49);
+}
+
+/* --- Intro --- */
+
+.intro {
+    padding-top: 69px;
+    height: 100vh;
+
+    background: rgb(241, 241, 241) url('../source/images/background/bedroom-2631746.jpg') center no-repeat;
+    background-size: cover;
+
+}
+
+.intro::before {
+    position: absolute;
+    content: '';
+    display: block;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0.6;
+    background: #fff;
+    z-index: 1;
+}
+
+.intro__inner {
+    z-index: 2;
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    width: 50%;
+}
+.intro__title {
+    margin-top: 150px;
+    font-size: 5rem;
+    font-family: 'Sue Ellen Francisco', cursive;
+    line-height: 1;
+}
+
+.intro__subtitle {
+    font-size: 2rem;
+    line-height: 1.6;
+    font-family: 'Raleway' ,sans-serif;
+}
+
+.intro__btn {
+    margin-top: 50px;
+    transition: background .2s linear;
+}
+
+.intro__btn:hover {
+    background-color: rgb(252, 18, 49);
+}
