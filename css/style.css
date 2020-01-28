@@ -174,7 +174,7 @@ font-family: 'Special Elite', cursive; */
     height: 3px;
     width: 100px;
     background-color: rgb(211, 22, 22);
-    margin: 30px auto;
+    margin: 50px auto;
 }
 
 .section__text {
@@ -290,6 +290,51 @@ font-family: 'Special Elite', cursive; */
 .comfort {
     background: rgb(70, 70, 70) url('../source/images/template/background_3.jpg') center no-repeat;
     background-size: cover;
+}
+
+/* --- Features --- */
+
+.features {
+    height: 100vh;
+}
+
+/* --- Services --- */
+
+.services {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.services__item {
+    width: 33.3333%;
+    padding: 61px 25px 61px 85px;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.services__item--border {
+    border-bottom: 1px solid #e5e5e5;
+    margin: 20px 0;
+}
+
+.services__icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    z-index: 1;
+}
+
+.services__tittle {
+    margin-bottom: 10px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.services__text {
+    color: #999;
 }
 
 
